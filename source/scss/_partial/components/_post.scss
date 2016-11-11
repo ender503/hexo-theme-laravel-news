@@ -1,0 +1,105 @@
+.post-wrap {
+  margin-top: 40px;
+  padding: 40px $article-padding 0 $article-padding;
+  // color: #8e8e8e;
+  color: #555;
+  font-size: 1.125rem;
+  line-height: 1.5em;
+
+}
+
+
+.post-header {
+  label {
+    font-size: .6875rem;
+    font-weight: 700;
+    letter-spacing: .2em;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: #f4645f;
+  }
+}
+
+.post-content {
+
+  p, table {
+    line-height: 1.6em;
+    margin: 1.6em 0;
+  }
+
+  img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  strong {
+    font-weight: bold;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 40px;
+  }
+
+  li {
+    display: list-item;
+    list-style: auto;
+  }
+}
+
+
+
+.post-footer {
+  @include clearfix;
+
+  padding: 20px 0;
+  font-size: 0.85em;
+  line-height: 1.6em;
+  border-top: 1px solid #ddd;
+
+
+  a {
+    color: #999;
+    text-decoration: none;
+    &:hover {
+      color: #555;
+    }
+  }
+}
+
+.post-tag-list-item {
+  float: left;
+  margin-right: 10px;
+}
+
+
+.post-tag-list-link:before {
+  content: "#";
+}
+
+
+.post-share-link {
+  cursor: pointer;
+  float: right;
+  margin-left: 20px;
+  &:before {
+    content: "\f064";
+    font-family: $font-icon;
+    padding-right: 6px;
+  }
+
+}
+
+
+@include susy-breakpoint($pad) {
+  .post-wrap {
+    padding: 40px $article-padding-M 0 $article-padding-M;
+  }
+
+}
+@include susy-breakpoint($mobile) {
+  .post-wrap {
+    padding: 40px $article-padding-S 0 $article-padding-S;
+  }
+}

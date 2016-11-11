@@ -1,0 +1,46 @@
+
+$color-default: #555;
+$color-grey: #999;
+$color-border: #ddd;
+$color-link: #258fb8;
+$color-background: #eee;
+$color-sidebar-text: #777;
+$color-widget-background: #ddd;
+$color-widget-border: #ccc;
+$color-footer-background: #262a30;
+$color-mobile-nav-background: #191919;
+$color-twitter: #00aced;
+$color-facebook: #3b5998;
+$color-pinterest: #cb2027;
+$color-google: #dd4b39;
+
+$highlight-background: #2d2d2d;
+$highlight-current-line: #393939;
+$highlight-selection: #515151;
+$highlight-foreground: #cccccc;
+$highlight-comment: #999999;
+$highlight-red: #f2777a;
+$highlight-orange: #f99157;
+$highlight-yellow: #ffcc66;
+$highlight-green: #99cc99;
+$highlight-aqua: #66cccc;
+$highlight-blue: #6699cc;
+$highlight-purple: #cc99cc;
+
+$article-margin: 30px;
+$article-margin-M: 20px;
+$article-margin-S: 10px;
+
+$article-padding: 90px;
+$article-padding-M: 50px;
+$article-padding-S: 20px;
+
+$font-icon: FontAwesome;
+$font-icon-path: "fonts/fontawesome-webfont";
+$font-icon-version: "4.6.3";
+
+$wrap-width: 960px;
+
+$mobile: max-width 480px;
+$pad: 480px, $wrap-width;
+$desktop: $wrap-width;

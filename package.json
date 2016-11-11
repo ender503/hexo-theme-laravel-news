@@ -22,9 +22,13 @@
   },
   "homepage": "https://github.com/pinggod/hexo-theme-apollo#readme",
   "devDependencies": {
+    "eyeglass": "^1.1.2",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.2",
     "gulp-sass": "^2.0.4",
     "gulp-sourcemaps": "^1.6.0"
+  },
+  "dependencies": {
+    "sass-include-paths": "^4.9.0"
   }
 }

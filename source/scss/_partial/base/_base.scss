@@ -1,0 +1,154 @@
+
+html, body {
+    font-size: 16px;
+    @include susy-breakpoint($pad) {
+      font-size: 14px;
+    }
+    @include susy-breakpoint($mobile) {
+      font-size: 14px;
+    }
+}
+
+
+body {
+    margin: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: #525252;
+}
+
+
+h1 {
+    font-size: 3.75rem
+}
+h1, h2 {
+    line-height: 1.2
+}
+h2 {
+    font-size: 1.875rem
+}
+h3 {
+    font-size: 1.25rem;
+    line-height: 1.2
+}
+h4 {
+    font-size: 1rem
+}
+h4, h5, h6 {
+    line-height: 1.3
+}
+h5 {
+    font-size: .8125rem
+}
+h6 {
+    font-size: .6875rem;
+}
+
+ol, ul {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    list-style-position: outside;
+}
+
+dl dt, h1, h2, h3, h4, h5, h6, table th {
+    font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #f4645f;
+}
+
+a:hover {
+  color: #d6514d;
+  transition: color .15s ease 0s;
+}
+
+
+p:last-child {
+    margin-bottom: 0;
+}
+p {
+    margin-top: 0;
+}
+
+textarea {
+  border: none;
+  border-right: 1px solid #ccc;
+  resize: none;
+  outline: none;
+  background-color: #f6f6f6;
+  font-size: 14px;
+  font-family: 'Monaco', courier, monospace;
+  padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+$susy: (
+  columns: 12,
+  gutter-position: inside,
+  use-custom: (
+    box-sizing: false
+  )
+);
+
+$wrap-width: 900px;
+
+$phone: max-width 480px;
+$pad: 480px, $wrap-width;
+$desktop: $wrap-width;
+
+.row {
+    @include container();
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        @include span($i);
+
+        @include susy-breakpoint($pad) {
+            @include span(12);
+        }
+
+        @include susy-breakpoint($phone) {
+            @include span(12);
+        }
+    }
+}
+
+@mixin clearfix {
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+}
+
+
+
+.list-unstyled {
+  list-style-type: none;
+}
+
+.list-inline li {
+  display: inline-block;
+}
+
+a.link-unstyled, a.link-unstyled:active, a.link-unstyled:hover {
+  cursor: pointer!important;
+  color: inherit!important;
+  text-decoration: none!important;
+}

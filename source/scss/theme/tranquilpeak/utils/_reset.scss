@@ -1,0 +1,23 @@
+h1 {
+    font-size: 2.8rem;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 1.9em;
+}
+
+dl dt, h1, h2, h3, h4, h5, h6, table th {
+    font-weight: normal;
+}
+
+a, a:active, a:hover, a:visited {
+    cursor: pointer;
+    color: #349ef3;
+    text-decoration: none;
+}

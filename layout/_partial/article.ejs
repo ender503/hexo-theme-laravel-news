@@ -1,0 +1,39 @@
+<div class="card post">
+  <div class="post-wrap">
+
+    <div class="post-header">
+        <label>
+          <%- partial('post/category') %>
+          /
+          <%- partial('post/date', {class_name: 'article-date', date_format: 'MMMM DD, YYYY'}) %>
+        </label>
+        <a href="<%- url_for(post.path) %>">
+          <h1 class="post-title"><%= post.title %></h1>
+        </a>
+    </div>
+    <div class="post-content">
+      <% if (post.excerpt && index) { %>
+	      <%- post.excerpt %>
+      <% } else { %>
+        <%- post.content %>
+      <% } %>
+    </div>
+
+    <footer class="post-footer">
+        <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="post-share-link"><%= __('share') %></a>
+        <% if (post.comments && config.disqus_shortname){ %>
+          <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a>
+        <% } %>
+        <%- partial('post/tag') %>
+    </footer>
+
+  </div>
+</div>
+
+<% if (!index && post.comments && config.disqus_shortname){ %>
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+<% } %>

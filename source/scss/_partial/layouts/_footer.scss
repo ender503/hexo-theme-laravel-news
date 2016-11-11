@@ -1,0 +1,55 @@
+.site-footer {
+
+  color: #ccc;
+  background-color: #262a30;
+
+  .widget-wrap {
+    margin-bottom: 10px;
+  }
+
+  .widget {
+    li {
+      line-height: 1.5em;
+    }
+  }
+
+  .social {
+    margin: 15px 0;
+
+
+    li {
+      list-style: none;
+      display: inline-block;
+    }
+
+
+  }
+
+  .title {
+    color: #fff;
+  }
+
+  .footer-main {
+    @include container();
+    padding: 50px 0;
+
+    .section {
+      @include span(4);
+
+      @include susy-breakpoint($mobile) {
+        text-align: center;
+        @include span(12);
+      }
+
+      @include susy-breakpoint($pad) {
+        text-align: center;
+        @include span(12);
+      }
+    }
+  }
+
+  .copyrights {
+    padding: 30px 0;
+    text-align: center;
+  }
+}

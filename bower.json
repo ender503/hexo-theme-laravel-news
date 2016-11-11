@@ -1,0 +1,27 @@
+{
+  "name": "blog",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Ting-Han Su <seph.serg@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "4.0",
+    "font-awesome": "fontawesome#~4.5.0",
+    "normalize-scss": "normalize.scss#~4.0.3",
+    "susy": "~2.2.12",
+    "bourbon": "^4.2.7"
+  }
+}

@@ -1,0 +1,74 @@
+.site-nav {
+  border-top: 6px solid #f4645f;
+  background-color: #fff;
+  box-shadow: 0 0 2px 2px rgba(42,42,42,.25);
+
+  .nav-header {
+    float: left;
+    margin-right: 20px;
+
+    .nav-logo {
+      display: inline-block;
+      padding: 14px 0;
+
+      .logo {
+        width: 44px;
+        height: 44px;
+        vertical-align: middle;
+      }
+
+      .title {
+          display: inline-block;
+          margin-left: 12px;
+          font-family: Miriam Libre, sans-serif;
+          font-weight: 700;
+          color: #525252;
+      }
+    }
+  }
+
+  .nav-container {
+    display: flex;
+
+    .nav-main {
+      margin: 25px 0;
+      flex: 2 auto;
+      order: 1;
+
+      .nav-item {
+        list-style: none;
+        display: inline-block;
+        padding-right: 20px;
+
+        a {
+          color: #a1a1a1;
+          transition: color .15s ease-in;
+
+          &:hover {
+            color: #f4645f;
+          }
+        }
+      }
+    }
+
+    .nav-social {
+      margin: 25px 0;
+      flex: 0 auto;
+      order: 2;
+
+      li {
+        list-style: none;
+        display: inline-block;
+      }
+
+      .icon {
+        color: #8e8e8e;
+        transition: color .15s ease-in;
+      }
+
+      .icon-facebook:hover {
+        color: #3b5998;
+      }
+    }
+  }
+}

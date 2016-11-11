@@ -1,0 +1,33 @@
+<div class="site-nav">
+  <div class="container wrapper">
+    <div class="nav-header">
+      <a class="nav-logo" href="<%- url_for() %>">
+        <img class="logo" src="http://d1u9biwaxjngwg.cloudfront.net/elements-showcase/vintage-140.jpg" alt="logo" />
+        <p class="title"><%= config.title %></p>
+      </a>
+    </div>
+    <div class="nav-container">
+        <nav class="nav-search">
+          <!-- <%- search_form({button: '&#xF002;'}) %> -->
+        </nav>
+
+        <nav class="nav-main">
+            <ul>
+                <% for (var i in theme.menu){ %>
+                  <li class="nav-item"><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+                <% } %>
+            </ul>
+        </nav>
+
+        <ul class="nav-social">
+            <ul>
+                <li>
+                    <a href="#"><i class="fa fa-facebook-official icon icon-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </ul>
+    </div>
+
+  </div>
+</div>

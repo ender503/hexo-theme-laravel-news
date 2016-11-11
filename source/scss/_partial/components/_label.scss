@@ -1,0 +1,22 @@
+.labels {
+  li {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 4px 0;
+
+    list-style: none;
+  }
+  a, label {
+
+    display: inline-block;
+    padding: 3px 7px;
+    border: 1px solid #f4645f;
+    color: #f4645f;
+    transition: all .15s ease-in;
+
+    &:hover {
+      color: #fff;
+      background-color: #f4645f;
+    }
+  }
+}

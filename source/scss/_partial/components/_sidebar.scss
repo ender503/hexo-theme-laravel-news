@@ -1,0 +1,97 @@
+.sidebar-profile, .buttonSet {
+    margin-bottom: 15px;
+}
+
+.sidebar-profile {
+    text-align: center;
+    padding: 40px 0 7.5px;
+
+    a {
+        display: inline-block;
+    }
+
+    .sidebar-profile-picture {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+    }
+    span {
+        display: block;
+    }
+}
+
+.buttonSet {
+    text-align: center;
+    line-height: 40px;
+
+    .button {
+        display: inline-block;
+        margin: 0 7px;
+        color: white;
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+    }
+
+    i {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .button:hover {
+        color: rgba(0,0,0,.8);
+    }
+
+    a.facebook {
+        display: inline-block;
+        border-radius: 50%;
+        //color: rgba(0,0,0,.44);
+        background-color: #3b5998;
+    }
+
+    a.github {
+        font-size: 28px;
+        color: #afb6ca;
+    }
+
+}
+
+.sidebar {
+    //background-color: #ccc;
+    color: white;
+    background-color: #3D4349;
+}
+
+.sitebar-buttons {
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+.sitebar-button {
+
+    height: 40px;
+    line-height: 40px;
+
+    .sitebar-button-link {
+        width: auto;
+        height: 100%;
+        padding-left: 23px;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .sitebar-button-icon {
+        margin-right: 15px;
+        font-size: 20px;
+
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .sitebar-button-desc {
+        font-size: 1.5rem;
+    }
+}
