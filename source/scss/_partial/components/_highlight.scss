@@ -1,6 +1,11 @@
 @mixin code-block {
   background: $highlight-background;
-  margin: 0 ($article-padding * -1);
+
+  margin-top: 0;
+  margin-right: ($article-padding * -1);
+  margin-bottom: 1.6em;
+  margin-left: ($article-padding * -1);
+
   padding: 15px 20px;
   border-style: solid;
   border-color: color-border;
@@ -10,10 +15,27 @@
   line-height: 22.400000000000002px;
 
   @include susy-breakpoint($mobile) {
-    margin: 0 ($article-padding-S * -1);
+    margin-right: ($article-padding-S * -1);
+    margin-left: ($article-padding-S * -1);
   }
   @include susy-breakpoint($pad) {
-    margin: 0 ($article-padding-M * -1);
+    margin-right: ($article-padding-M * -1);
+    margin-left: ($article-padding-M * -1);
+  }
+}
+
+@mixin pre-block {
+
+  padding-right: ($article-padding);
+  padding-left: ($article-padding);
+
+  @include susy-breakpoint($mobile) {
+    padding-right: ($article-padding-S);
+    padding-left: ($article-padding-S);
+  }
+  @include susy-breakpoint($pad) {
+    padding-right: ($article-padding-M);
+    padding-left: ($article-padding-M);
   }
 }
 
@@ -21,6 +43,7 @@
   color: #666;
   font-size: 0.85em;
 }
+
 .post-content {
   code {
     background: $color-background;
@@ -30,7 +53,7 @@
   }
   pre {
     @include code-block;
-    margin-bottom: 20px;
+    @include pre-block;
     code {
       background: none;
       text-shadow: none;

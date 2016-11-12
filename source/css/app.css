@@ -2612,26 +2612,24 @@ a.link-unstyled, a.link-unstyled:active, a.link-unstyled:hover {
   text-transform: uppercase;
   color: #f4645f; }
 
-.post-content p, .post-content table {
-  line-height: 1.6em;
-  margin: 1.6em 0; }
-
-.post-content img, .post-content video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: auto; }
-
-.post-content strong {
-  font-weight: bold; }
-
-.post-content ul {
-  list-style-type: disc;
-  padding-left: 40px; }
-
-.post-content li {
-  display: list-item;
-  list-style: auto; }
+.post-content {
+  margin-bottom: 30px; }
+  .post-content p, .post-content table {
+    line-height: 1.6em;
+    margin: 1.6em 0; }
+  .post-content img, .post-content video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto; }
+  .post-content strong {
+    font-weight: bold; }
+  .post-content ul {
+    list-style-type: disc;
+    padding-left: 40px; }
+  .post-content li {
+    display: list-item;
+    list-style: auto; }
 
 .post-footer {
   padding: 20px 0;
@@ -2945,7 +2943,10 @@ a.link-unstyled, a.link-unstyled:active, a.link-unstyled:hover {
 
 .post-content pre {
   background: #2d2d2d;
-  margin: 0 -90px;
+  margin-top: 0;
+  margin-right: -90px;
+  margin-bottom: 1.6em;
+  margin-left: -90px;
   padding: 15px 20px;
   border-style: solid;
   border-color: color-border;
@@ -2953,13 +2954,24 @@ a.link-unstyled, a.link-unstyled:active, a.link-unstyled:hover {
   overflow: auto;
   color: #cccccc;
   line-height: 22.400000000000002px;
-  margin-bottom: 20px; }
+  padding-right: 90px;
+  padding-left: 90px; }
   @media (max-width: 480px) {
     .post-content pre {
-      margin: 0 -20px; } }
+      margin-right: -20px;
+      margin-left: -20px; } }
   @media (min-width: 480px) and (max-width: 900px) {
     .post-content pre {
-      margin: 0 -50px; } }
+      margin-right: -50px;
+      margin-left: -50px; } }
+  @media (max-width: 480px) {
+    .post-content pre {
+      padding-right: 20px;
+      padding-left: 20px; } }
+  @media (min-width: 480px) and (max-width: 900px) {
+    .post-content pre {
+      padding-right: 50px;
+      padding-left: 50px; } }
   .post-content pre code {
     background: none;
     text-shadow: none;
@@ -2967,7 +2979,10 @@ a.link-unstyled, a.link-unstyled:active, a.link-unstyled:hover {
 
 .highlight {
   background: #2d2d2d;
-  margin: 0 -90px;
+  margin-top: 0;
+  margin-right: -90px;
+  margin-bottom: 1.6em;
+  margin-left: -90px;
   padding: 15px 20px;
   border-style: solid;
   border-color: color-border;
@@ -2977,10 +2992,12 @@ a.link-unstyled, a.link-unstyled:active, a.link-unstyled:hover {
   line-height: 22.400000000000002px; }
   @media (max-width: 480px) {
     .highlight {
-      margin: 0 -20px; } }
+      margin-right: -20px;
+      margin-left: -20px; } }
   @media (min-width: 480px) and (max-width: 900px) {
     .highlight {
-      margin: 0 -50px; } }
+      margin-right: -50px;
+      margin-left: -50px; } }
   .highlight pre {
     border: none;
     margin: 0;
