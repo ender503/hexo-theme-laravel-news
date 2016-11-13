@@ -7,9 +7,9 @@ body {
 }
 
 
+
 .container {
   max-width: $constainer-width;
-  // box-sizing: content-box;
   margin: auto;
   &:after {
     content: "";
@@ -35,8 +35,7 @@ body {
 
 
   .card {
-      background-color: #fff;
-      box-shadow: 0 1px 5px #dcdcdc;
+    @include card-block;
   }
 
 
@@ -48,8 +47,6 @@ body {
     left: 0;
     width: $sidebar-width;
     height: 100vh;
-    //z-index: 1;
-
     @include transition( all 0.8s );
 }
 

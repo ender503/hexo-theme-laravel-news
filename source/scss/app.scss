@@ -1,9 +1,8 @@
 $octicons-font-path: '../fonts';
 
 @import '_partial/utils/variables.scss',
-        '_partial/utils/typography.scss';
-
-
+        '_partial/utils/typography.scss',
+        '_partial/utils/mixins.scss';
 
 @import '../../components/susy/sass/susy.scss',
         '../../components/bourbon/app/assets/stylesheets/bourbon.scss',

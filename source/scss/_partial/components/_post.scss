@@ -1,11 +1,8 @@
 .post-wrap {
-  margin-top: 40px;
-  padding: 40px $article-padding 0 $article-padding;
-  // color: #8e8e8e;
+  @include post-wrap;
   color: #555;
   font-size: 1.125rem;
   line-height: 1.5em;
-
 }
 
 
@@ -98,14 +95,8 @@
 }
 
 
-@include susy-breakpoint($pad) {
-  .post-wrap {
-    padding: 40px $article-padding-M 0 $article-padding-M;
-  }
+#comments {
+  @include card-block;
+  @include post-wrap;
+}
 
-}
-@include susy-breakpoint($mobile) {
-  .post-wrap {
-    padding: 40px $article-padding-S 0 $article-padding-S;
-  }
-}

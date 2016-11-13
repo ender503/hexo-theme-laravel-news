@@ -1,0 +1,66 @@
+@mixin card-block {
+  background-color: #fff;
+  box-shadow: 0 1px 5px #dcdcdc;
+}
+
+@mixin post-wrap {
+  margin-top: 40px;
+  padding: 40px $article-padding 0 $article-padding;
+
+  @include susy-breakpoint($pad) {
+    padding: 40px $article-padding-M 0 $article-padding-M;
+
+  }
+  @include susy-breakpoint($mobile) {
+    padding: 40px $article-padding-S 0 $article-padding-S;
+  }
+}
+
+
+
+// highlight
+@mixin code-block {
+  background: $highlight-background;
+
+  margin-top: 0;
+  margin-right: ($article-padding * -1);
+  margin-bottom: 1.6em;
+  margin-left: ($article-padding * -1);
+
+  padding: 15px 20px;
+  border-style: solid;
+  border-color: color-border;
+  border-width: 1px 0;
+  overflow: auto;
+  color: $highlight-foreground;
+  line-height: 22.400000000000002px;
+
+  @include susy-breakpoint($mobile) {
+    margin-right: ($article-padding-S * -1);
+    margin-left: ($article-padding-S * -1);
+  }
+  @include susy-breakpoint($pad) {
+    margin-right: ($article-padding-M * -1);
+    margin-left: ($article-padding-M * -1);
+  }
+}
+
+@mixin pre-block {
+
+  padding-right: ($article-padding);
+  padding-left: ($article-padding);
+
+  @include susy-breakpoint($mobile) {
+    padding-right: ($article-padding-S);
+    padding-left: ($article-padding-S);
+  }
+  @include susy-breakpoint($pad) {
+    padding-right: ($article-padding-M);
+    padding-left: ($article-padding-M);
+  }
+}
+
+@mixin line-numbers {
+  color: #666;
+  font-size: 0.85em;
+}
